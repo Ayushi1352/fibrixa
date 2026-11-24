@@ -1,0 +1,405 @@
+{
+  "common": {
+    "theme": {
+      "fonts": {
+        "primary": "var(--font-inter)",
+        "display": "var(--font-red-hat-display)",
+        "about": "var(--font-google-sans)",
+        "services": "var(--font-poppins)",
+        "card": "var(--font-inter-tight)",
+        "title": "var(--font-lato)"
+      }
+    },
+    "metadata": {
+      "title": "FIBRIXA | Sustainable Paper & Packaging Solutions",
+      "description": "High-quality, eco-friendly paper and packaging solutions designed for protection, presentation and a more sustainable future: food, retail, corrugated, custom, protective and brand packaging.",
+      "lang": "en"
+    },
+    "company": {
+      "logo": "/images/fibrixa-logo.webp",
+      "logoAlt": "FIBRIXA Paper & Packaging Solutions",
+      "logoWidth": 1980,
+      "logoHeight": 552,
+      "contactItems": [
+        {
+          "id": "phone",
+          "icon": "FaPhoneAlt",
+          "footerIcon": "FaPhoneAlt",
+          "title": "Call Us",
+          "value": "+1 0000000000",
+          "url": "tel:+10000000000"
+        },
+        {
+          "id": "email",
+          "icon": "TbMail",
+          "footerIcon": "FaEnvelope",
+          "title": "Email Us",
+          "value": "info@xyz.com",
+          "url": "mailto:info@xyz.com"
+        },
+        {
+          "id": "address",
+          "icon": "FaMapMarkerAlt",
+          "footerIcon": "FaMapMarkerAlt",
+          "title": "Our Address",
+          "value": "123 Main Street, New York, NY 10001",
+          "url": "https://www.google.com/maps/search/?api=1&query=123+Main+Street+New+York+NY+10001"
+        }
+      ]
+    },
+    "Footer": {
+      "logo": "/images/fibrixa-logo-white.webp",
+      "logoWidth": 1980,
+      "logoHeight": 552,
+      "logoUrl": "#home",
+      "homeLabel": "FIBRIXA — back to top",
+      "linkGroups": [
+        {
+          "id": "quick-links",
+          "title": "Quick Links",
+          "links": [
+            { "id": "home", "label": "Home", "url": "#home" },
+            { "id": "about-us", "label": "About Us", "url": "#about" },
+            { "id": "services", "label": "Services", "url": "#services" },
+            { "id": "products", "label": "Products", "url": "#products" }
+          ]
+        },
+        {
+          "id": "industries",
+          "title": "Industries",
+          "links": [
+            { "id": "industry-we-serve", "label": "Industry We Serve", "url": "#industries" },
+            { "id": "testimonials", "label": "Testimonials", "url": "#testimonials" },
+            { "id": "contact-us", "label": "Contact Us", "url": "#contact" }
+          ]
+        }
+      ],
+      "contactTitle": "Get In Touch",
+      "copyrightText": "© {year} FIBRIXA Paper & Packaging Solutions. All Rights Reserved. Powered by Lestow."
+    }
+  },
+  "categories": {
+    "Packaging": {
+      "sections": {
+        "Header": {
+          "variants": {
+            "PackagingHeader1": {
+              "logoUrl": "/",
+              "homeLabel": "FIBRIXA — back to top",
+              "navLinks": [
+                { "id": "home", "label": "Home", "url": "#home" },
+                { "id": "about-us", "label": "About Us", "url": "#about" },
+                { "id": "services", "label": "Services", "url": "#services" },
+                { "id": "products", "label": "Products", "url": "#products" },
+                { "id": "industry-we-serve", "label": "Industry We Serve", "url": "#industries" },
+                { "id": "testimonials", "label": "Testimonials", "url": "#testimonials" }
+              ],
+              "buttonText": "Contact Us",
+              "buttonUrl": "#contact",
+              "mainNavLabel": "Main",
+              "mobileNavLabel": "Mobile",
+              "openMenuLabel": "Open menu",
+              "closeMenuLabel": "Close menu"
+            }
+          }
+        },
+        "Hero": {
+          "variants": {
+            "PackagingHero1": {
+              "id": "home",
+              "label": "Paper & Packaging Solutions",
+              "titleTop": "Sustainable Packaging\nThat Elevates",
+              "titleAccent": "Your Brand",
+              "description": "High-quality, eco-friendly paper and packaging\nsolutions designed for protection, presentation\nand a more sustainable future.",
+              "image": "/images/packaging-hero-wide.webp",
+              "imageAlt": "FIBRIXA kraft packaging: a paper bag, a cup with a maroon lid, shipping boxes with the FIBRIXA logo, a mailer box with paper fill and a roll of corrugated paper"
+            }
+          }
+        },
+        "About": {
+          "variants": {
+            "PackagingAbout1": {
+              "id": "about",
+              "label": "About Us",
+              "titleTop": "We Are Solutions For",
+              "titleAccent": "Your Paper & Packaging",
+              "description": "FIBRIXA is a trusted name in paper and packaging, delivering\nhigh-quality, sustainable and customized solutions that help\nbrands protect, present and grow their products.",
+              "featuresLabel": "Why FIBRIXA",
+              "features": [
+                { "id": "premium-quality", "icon": "TbPackage", "text": "Premium Quality" },
+                { "id": "sustainable", "icon": "TbLeaf", "text": "Sustainable & Eco-Friendly" },
+                { "id": "custom-packaging", "icon": "TbStack2", "text": "Custom Packaging" },
+                { "id": "reliable", "icon": "LuShieldCheck", "text": "Reliable & Durable" },
+                { "id": "manufacturing", "icon": "TbSettings", "text": "Advanced Manufacturing" },
+                { "id": "customer-focused", "icon": "TbUsers", "text": "Customer-Focused Service" }
+              ],
+              "image": "/images/paper-machine.webp",
+              "imageAlt": "A paper machine pressing a stack of kraft corrugated sheets, with a large roll of kraft paper behind it"
+            }
+          }
+        },
+        "Services": {
+          "variants": {
+            "PackagingServices1": {
+              "id": "services",
+              "label": "Our Services",
+              "titleTop": "We Provide Various",
+              "titleAccent": "Kinds Of Packaging",
+              "description": "We offer a wide range of paper and packaging\nsolutions designed to protect, present and\nadd value to your products.",
+              "items": [
+                {
+                  "id": "food",
+                  "icon": "TbPackage",
+                  "title": "Food\nPackaging",
+                  "image": "/images/food-burger-box-white.webp",
+                  "imageAlt": "Kraft burger box with a burger, stacked food boxes and a paper cup"
+                },
+                {
+                  "id": "retail",
+                  "icon": "TbShoppingBag",
+                  "title": "Retail\nPackaging",
+                  "image": "/images/kraft-bags-fibrixa-white.webp",
+                  "imageAlt": "Kraft paper shopping bags with the FIBRIXA logo"
+                },
+                {
+                  "id": "corrugated",
+                  "icon": "LuPackageOpen",
+                  "title": "Corrugated\nPackaging",
+                  "image": "/images/corrugated-boxes-white.webp",
+                  "imageAlt": "An open corrugated box on top of two closed corrugated boxes"
+                },
+                {
+                  "id": "custom",
+                  "icon": "TbGift",
+                  "title": "Custom\nPackaging",
+                  "image": "/images/gift-box-fibrixa-white.webp",
+                  "imageAlt": "A maroon FIBRIXA gift box with its lid open and cream satin inside"
+                },
+                {
+                  "id": "protective",
+                  "icon": "LuShieldCheck",
+                  "title": "Protective\nPackaging",
+                  "image": "/images/pulp-tray-white.webp",
+                  "imageAlt": "A moulded pulp protective insert tray"
+                },
+                {
+                  "id": "sustainable",
+                  "icon": "TbLeaf",
+                  "title": "Sustainable\nPackaging",
+                  "image": "/images/recycled-cups-white.webp",
+                  "imageAlt": "Two kraft paper cups with recycling symbols and a green leaf"
+                },
+                {
+                  "id": "industrial",
+                  "icon": "TbStack2",
+                  "title": "Industrial\nPackaging",
+                  "image": "/images/corrugated-roll-white.webp",
+                  "imageAlt": "A large roll of kraft corrugated paper"
+                },
+                {
+                  "id": "brand",
+                  "icon": "TbShoppingBag",
+                  "title": "Brand\nPackaging",
+                  "image": "/images/brand-box-fibrixa-white.webp",
+                  "imageAlt": "A white FIBRIXA branded box with a maroon wave"
+                }
+              ]
+            }
+          }
+        },
+        "Products": {
+          "variants": {
+            "PackagingProducts1": {
+              "id": "products",
+              "label": "Our Products",
+              "titleTop": "Our Paper &",
+              "titleAccent": "Packaging Products",
+              "description": "A wide range of high-quality, durable and eco-friendly packaging solutions for diverse industry needs.",
+              "items": [
+                {
+                  "id": "corrugated-boxes",
+                  "title": "Corrugated\nBoxes",
+                  "image": "/images/corrugated-boxes-white.webp",
+                  "imageAlt": "An open corrugated box on stacked corrugated boxes"
+                },
+                {
+                  "id": "paper-bags",
+                  "title": "Paper\nBags",
+                  "image": "/images/kraft-bags-white.webp",
+                  "imageAlt": "Two kraft paper bags with twisted handles"
+                },
+                {
+                  "id": "food-packaging",
+                  "title": "Food\nPackaging",
+                  "image": "/images/food-boxes-cup-white.webp",
+                  "imageAlt": "Kraft clamshell food boxes and a paper cup with a white lid"
+                },
+                {
+                  "id": "papers-rolls",
+                  "title": "Packaging\nPapers & Rolls",
+                  "image": "/images/corrugated-roll-white.webp",
+                  "imageAlt": "A roll of corrugated kraft paper"
+                },
+                {
+                  "id": "custom-packaging",
+                  "title": "Custom\nPackaging",
+                  "image": "/images/gift-box-fibrixa-white.webp",
+                  "imageAlt": "A maroon FIBRIXA gift box with its lid open and cream satin inside"
+                }
+              ]
+            }
+          }
+        },
+        "Industries": {
+          "variants": {
+            "PackagingIndustries1": {
+              "id": "industries",
+              "label": "Industries We Serve",
+              "titleTop": "Packaging Solutions For",
+              "titleAccent": "Diverse Industries",
+              "description": "We deliver reliable, sustainable and customized paper & packaging solutions for a wide range of industries.",
+              "items": [
+                {
+                  "id": "food-beverage",
+                  "title": "Food &\nBeverage",
+                  "image": "/images/food-burger-box-white.webp",
+                  "imageAlt": "A burger in an open kraft box, stacked food boxes and a paper cup"
+                },
+                {
+                  "id": "retail-ecommerce",
+                  "title": "Retail &\nE-commerce",
+                  "image": "/images/kraft-bags-white.webp",
+                  "imageAlt": "Two kraft shopping bags"
+                },
+                {
+                  "id": "pharmaceutical",
+                  "title": "Pharmaceutical",
+                  "image": "/images/pharma-boxes-white.webp",
+                  "imageAlt": "White and maroon medicine cartons and a white pill bottle"
+                },
+                {
+                  "id": "cosmetics",
+                  "title": "Cosmetics &\nPersonal Care",
+                  "image": "/images/cosmetics-jars-white.webp",
+                  "imageAlt": "Cream tubes and a jar with a maroon lid"
+                },
+                {
+                  "id": "electronics",
+                  "title": "Electronics &\nAppliances",
+                  "image": "/images/shipping-box-white.webp",
+                  "imageAlt": "A corrugated shipping box with handling symbols"
+                },
+                {
+                  "id": "textile",
+                  "title": "Textile &\nApparel",
+                  "image": "/images/textile-drawer-box-white.webp",
+                  "imageAlt": "A kraft drawer box with folded fabric inside"
+                },
+                {
+                  "id": "automotive",
+                  "title": "Industrial &\nAutomotive",
+                  "image": "/images/box-pulp-tray-white.webp",
+                  "imageAlt": "A moulded pulp insert tray in front of a corrugated box"
+                },
+                {
+                  "id": "fmcg",
+                  "title": "FMCG &\nConsumer Goods",
+                  "image": "/images/gable-box-carry-roomy-white.webp",
+                  "imageAlt": "A kraft carry box with a handle"
+                }
+              ]
+            }
+          }
+        },
+        "Testimonials": {
+          "variants": {
+            "PackagingTestimonials1": {
+              "id": "testimonials",
+              "label": "Testimonials",
+              "titleTop": "What Our",
+              "titleAccent": "Clients Say",
+              "description": "Trusted by businesses across industries for our quality, reliability and service.",
+              "ratingLabel": "{stars} out of 5 stars",
+              "items": [
+                {
+                  "id": "aghnia-niaa",
+                  "quote": "Lorem ipsum dolor sit amet, consectetur\nadipiscing elit, sed do eiusmod tempor\nincididunt ut labore et dolore magna aliqua.",
+                  "name": "Aghnia Niaa",
+                  "role": "Retail Partner",
+                  "image": "/images/testimonial-boxes.webp",
+                  "stars": 5
+                },
+                {
+                  "id": "chlara-shinta",
+                  "quote": "Lorem ipsum dolor sit amet, consectetur\nadipiscing elit, sed do eiusmod tempor\nincididunt ut labore et dolore magna aliqua.",
+                  "name": "Chlara Shinta",
+                  "role": "E-commerce Client",
+                  "image": "/images/testimonial-bags.webp",
+                  "stars": 5
+                },
+                {
+                  "id": "nandha-nabil",
+                  "quote": "Lorem ipsum dolor sit amet, consectetur\nadipiscing elit, sed do eiusmod tempor\nincididunt ut labore et dolore magna aliqua.",
+                  "name": "Nandha Nabil",
+                  "role": "FMCG Manufacturer",
+                  "image": "/images/testimonial-cups.webp",
+                  "stars": 5
+                }
+              ]
+            }
+          }
+        },
+        "Contact": {
+          "variants": {
+            "PackagingContact1": {
+              "id": "contact",
+              "label": "Contact Us",
+              "titleTop": "Get In",
+              "titleAccent": "Touch",
+              "description": "Have a question, requirement or a custom packaging need?\nWe’re here to help. Reach out to our team and we’ll get back to you shortly.",
+              "image": "/images/contact-packaging.webp",
+              "imageAlt": "Kraft shipping boxes, an open box with paper fill, a maroon FIBRIXA mailer box and a roll of kraft paper",
+              "form": {
+                "titleTop": "Send Us a",
+                "titleAccent": "Message",
+                "fields": {
+                  "name": { "placeholder": "Your Name *" },
+                  "email": { "placeholder": "Your Email *" },
+                  "phone": { "placeholder": "Phone Number" },
+                  "company": { "placeholder": "Company Name" },
+                  "message": { "placeholder": "Your Message *" }
+                },
+                "button": "Send Message",
+                "sending": "Sending...",
+                "successTitle": "Thank you, {name}!",
+                "success": "Your message has been sent. Our team will get back to you shortly.",
+                "closeLabel": "Close message"
+              }
+            }
+          }
+        }
+      },
+      "templateComponents": {
+        "template-1": {
+          "shared": {
+            "Header": "PackagingHeader1",
+            "Footer": "common.Footer"
+          },
+          "pages": {
+            "home": {
+              "components": [
+                { "key": "Hero", "component": "PackagingHero1" },
+                { "key": "About", "component": "PackagingAbout1" },
+                { "key": "Services", "component": "PackagingServices1" },
+                { "key": "Products", "component": "PackagingProducts1" },
+                { "key": "Industries", "component": "PackagingIndustries1" },
+                { "key": "Testimonials", "component": "PackagingTestimonials1" },
+                { "key": "Contact", "component": "PackagingContact1" }
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

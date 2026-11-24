@@ -1,26 +1,86 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+  --font-primary: Arial, sans-serif;
+  --font-display: Arial, sans-serif;
+  --font-about: Arial, sans-serif;
+  --font-services: Arial, sans-serif;
+  --font-card: Arial, sans-serif;
+  --font-title: Arial, sans-serif;
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  /* Fibrixa theme (from the logo and the design: deep maroon and kraft tan on white) */
+  /* Maroon (buttons, highlighted title words, labels, icons, the footer) */
+  --color-maroon: #681b2e;
+  /* the current menu link and the "Get In" / "Send Us a" titles */
+  --color-maroon-deep: #5c1022;
+  /* the highlighted words of the About, Products, Industries and Testimonials titles */
+  --color-maroon-bright: #6d0b1c;
+  /* labels ("About Us", "Our Services"…) and their lines */
+  --color-maroon-label: #6b1a24;
+  /* the hero label, a softer maroon */
+  --color-maroon-muted: #632e36;
+  /* Tan (kraft paper: underlines, the hero text bar, the About photo's back panel, footer accents) */
+  --color-tan: #a88574;
+  --color-tan-light: #b8988a;
+  --color-tan-title: #b07a56;
+  --color-tan-quote: #c7ae9e;
+  --color-tan-panel: #dcbdb3;
+  --color-tan-footer: #c5a18b;
+  --color-star: #fbb11c;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+  /* Text */
+  --color-ink: #141528;
+  --color-ink-nav: #17181d;
+  --color-ink-black: #0b0c10;
+  --color-text: #212129;
+  --color-text-hero: #484545;
+  --color-text-hero-title: #2b2727;
+  --color-text-soft: #4f4f58;
+  --color-text-muted: #525357;
+  --color-text-grey: #464f59;
+  /* the form fields' placeholders (dark, as in the design) */
+  --color-text-placeholder: #2d2e2d;
+  --color-white: #ffffff;
+  --color-white-90: rgba(255, 255, 255, 0.9);
+  --color-white-35: rgba(255, 255, 255, 0.35);
+  --color-white-15: rgba(255, 255, 255, 0.15);
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  /* Backgrounds and borders */
+  --color-bg-main: #fefefe;
+  --color-bg-header: #ffffff;
+  /* the soft pink of the hero and the service / industry cards */
+  --color-bg-blush: #f9f1ef;
+  /* the hero: the wall of its photo (shown behind the text on phones and tablets) */
+  --color-hero-wall: #fbf4f7;
+  /* the wave at the bottom of the hero: the pink band over the maroon */
+  --color-wave-band: #e9bfc3;
+  /* the service cards (measured on the design): light on the left, behind the text, deepening to the right */
+  --color-service-card-from: #fbf6f3;
+  --color-service-card-mid: #f2e8e3;
+  --color-service-card-to: #ece1db;
+  /* the industry cards: almost flat, a very light pink */
+  --color-industry-card-from: #fbf6f3;
+  --color-industry-card-to: #f8f3f0;
+  --color-bg-footer: #3a0a12;
+  --color-footer-wave: #8a3642;
+  --color-footer-wave-soft: #5a1420;
+  /* Shown on both sides of the page when the screen is wider than 1920px (or the browser is zoomed out). */
+  --color-bg-backdrop: #f3eeec;
+  --color-border: #dedadb;
+  --color-border-card: #eeeeee;
+  --color-border-field: #d6d5da;
+  --color-border-form: #a2636d;
+  --color-divider: #dfdfdf;
+  --color-divider-soft: #f0e6e3;
+  --color-divider-services: #d4c6c0;
+  --color-divider-quote: #ebe1db;
+  /* the faint arcs behind the hero, services and industries */
+  --color-arc: #efe3df;
+
+  /* Shadows */
+  --color-shadow-strong: rgba(58, 10, 18, 0.18);
+  --color-shadow-maroon: rgba(104, 27, 46, 0.35);
+  --color-overlay-menu: rgba(20, 21, 40, 0.45);
 }
