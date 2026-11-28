@@ -58,19 +58,47 @@
           "id": "quick-links",
           "title": "Quick Links",
           "links": [
-            { "id": "home", "label": "Home", "url": "#home" },
-            { "id": "about-us", "label": "About Us", "url": "#about" },
-            { "id": "services", "label": "Services", "url": "#services" },
-            { "id": "products", "label": "Products", "url": "#products" }
+            {
+              "id": "home",
+              "label": "Home",
+              "url": "#home"
+            },
+            {
+              "id": "about-us",
+              "label": "About Us",
+              "url": "#about"
+            },
+            {
+              "id": "services",
+              "label": "Services",
+              "url": "#services"
+            },
+            {
+              "id": "products",
+              "label": "Products",
+              "url": "#products"
+            }
           ]
         },
         {
           "id": "industries",
           "title": "Industries",
           "links": [
-            { "id": "industry-we-serve", "label": "Industry We Serve", "url": "#industries" },
-            { "id": "testimonials", "label": "Testimonials", "url": "#testimonials" },
-            { "id": "contact-us", "label": "Contact Us", "url": "#contact" }
+            {
+              "id": "industry-we-serve",
+              "label": "Industry We Serve",
+              "url": "#industries"
+            },
+            {
+              "id": "testimonials",
+              "label": "Testimonials",
+              "url": "#testimonials"
+            },
+            {
+              "id": "contact-us",
+              "label": "Contact Us",
+              "url": "#contact"
+            }
           ]
         }
       ],
@@ -87,12 +115,36 @@
               "logoUrl": "/",
               "homeLabel": "FIBRIXA — back to top",
               "navLinks": [
-                { "id": "home", "label": "Home", "url": "#home" },
-                { "id": "about-us", "label": "About Us", "url": "#about" },
-                { "id": "services", "label": "Services", "url": "#services" },
-                { "id": "products", "label": "Products", "url": "#products" },
-                { "id": "industry-we-serve", "label": "Industry We Serve", "url": "#industries" },
-                { "id": "testimonials", "label": "Testimonials", "url": "#testimonials" }
+                {
+                  "id": "home",
+                  "label": "Home",
+                  "url": "#home"
+                },
+                {
+                  "id": "about-us",
+                  "label": "About Us",
+                  "url": "#about"
+                },
+                {
+                  "id": "services",
+                  "label": "Services",
+                  "url": "#services"
+                },
+                {
+                  "id": "products",
+                  "label": "Products",
+                  "url": "#products"
+                },
+                {
+                  "id": "industry-we-serve",
+                  "label": "Industry We Serve",
+                  "url": "#industries"
+                },
+                {
+                  "id": "testimonials",
+                  "label": "Testimonials",
+                  "url": "#testimonials"
+                }
               ],
               "buttonText": "Contact Us",
               "buttonUrl": "#contact",
@@ -126,12 +178,36 @@
               "description": "FIBRIXA is a trusted name in paper and packaging, delivering\nhigh-quality, sustainable and customized solutions that help\nbrands protect, present and grow their products.",
               "featuresLabel": "Why FIBRIXA",
               "features": [
-                { "id": "premium-quality", "icon": "TbPackage", "text": "Premium Quality" },
-                { "id": "sustainable", "icon": "TbLeaf", "text": "Sustainable & Eco-Friendly" },
-                { "id": "custom-packaging", "icon": "TbStack2", "text": "Custom Packaging" },
-                { "id": "reliable", "icon": "LuShieldCheck", "text": "Reliable & Durable" },
-                { "id": "manufacturing", "icon": "TbSettings", "text": "Advanced Manufacturing" },
-                { "id": "customer-focused", "icon": "TbUsers", "text": "Customer-Focused Service" }
+                {
+                  "id": "premium-quality",
+                  "icon": "TbPackage",
+                  "text": "Premium Quality"
+                },
+                {
+                  "id": "sustainable",
+                  "icon": "TbLeaf",
+                  "text": "Sustainable & Eco-Friendly"
+                },
+                {
+                  "id": "custom-packaging",
+                  "icon": "TbStack2",
+                  "text": "Custom Packaging"
+                },
+                {
+                  "id": "reliable",
+                  "icon": "LuShieldCheck",
+                  "text": "Reliable & Durable"
+                },
+                {
+                  "id": "manufacturing",
+                  "icon": "TbSettings",
+                  "text": "Advanced Manufacturing"
+                },
+                {
+                  "id": "customer-focused",
+                  "icon": "TbUsers",
+                  "text": "Customer-Focused Service"
+                }
               ],
               "image": "/images/paper-machine.webp",
               "imageAlt": "A paper machine pressing a stack of kraft corrugated sheets, with a large roll of kraft paper behind it"
@@ -363,22 +439,36 @@
               "description": "Have a question, requirement or a custom packaging need?\nWe’re here to help. Reach out to our team and we’ll get back to you shortly.",
               "image": "/images/contact-packaging.webp",
               "imageAlt": "Kraft shipping boxes, an open box with paper fill, a maroon FIBRIXA mailer box and a roll of kraft paper",
-              "form": {
-                "titleTop": "Send Us a",
-                "titleAccent": "Message",
-                "fields": {
-                  "name": { "placeholder": "Your Name *" },
-                  "email": { "placeholder": "Your Email *" },
-                  "phone": { "placeholder": "Phone Number" },
-                  "company": { "placeholder": "Company Name" },
-                  "message": { "placeholder": "Your Message *" }
+              "formTitleTop": "Send Us a",
+              "formTitleAccent": "Message"
+            }
+          }
+        },
+        "EnquiryForm": {
+          "variants": {
+            "PackagingEnquiryForm1": {
+              "fields": {
+                "name": {
+                  "placeholder": "Your Name *"
                 },
-                "button": "Send Message",
-                "sending": "Sending...",
-                "successTitle": "Thank you, {name}!",
-                "success": "Your message has been sent. Our team will get back to you shortly.",
-                "closeLabel": "Close message"
-              }
+                "email": {
+                  "placeholder": "Your Email *"
+                },
+                "phone": {
+                  "placeholder": "Phone Number"
+                },
+                "company": {
+                  "placeholder": "Company Name"
+                },
+                "message": {
+                  "placeholder": "Your Message *"
+                }
+              },
+              "button": "Send Message",
+              "sending": "Sending...",
+              "successTitle": "Thank you, {name}!",
+              "success": "Your message has been sent. Our team will get back to you shortly.",
+              "closeLabel": "Close message"
             }
           }
         }
@@ -392,13 +482,34 @@
           "pages": {
             "home": {
               "components": [
-                { "key": "Hero", "component": "PackagingHero1" },
-                { "key": "About", "component": "PackagingAbout1" },
-                { "key": "Services", "component": "PackagingServices1" },
-                { "key": "Products", "component": "PackagingProducts1" },
-                { "key": "Industries", "component": "PackagingIndustries1" },
-                { "key": "Testimonials", "component": "PackagingTestimonials1" },
-                { "key": "Contact", "component": "PackagingContact1" }
+                {
+                  "key": "Hero",
+                  "component": "PackagingHero1"
+                },
+                {
+                  "key": "About",
+                  "component": "PackagingAbout1"
+                },
+                {
+                  "key": "Services",
+                  "component": "PackagingServices1"
+                },
+                {
+                  "key": "Products",
+                  "component": "PackagingProducts1"
+                },
+                {
+                  "key": "Industries",
+                  "component": "PackagingIndustries1"
+                },
+                {
+                  "key": "Testimonials",
+                  "component": "PackagingTestimonials1"
+                },
+                {
+                  "key": "Contact",
+                  "component": "PackagingContact1"
+                }
               ]
             }
           }

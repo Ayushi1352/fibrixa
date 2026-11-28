@@ -174,7 +174,7 @@ export interface FormField {
   placeholder: string;
 }
 
-export interface EnquiryFormData extends SplitTitle {
+export interface EnquiryFormData {
   fields: {
     name: FormField;
     email: FormField;
@@ -196,7 +196,9 @@ export interface ContactData extends SplitTitle {
   description: string;
   image: string;
   imageAlt: string;
-  form: EnquiryFormData;
+  /** the form card's title: "Send Us a" and the highlighted (tan) "Message" */
+  formTitleTop: string;
+  formTitleAccent: string;
 }
 
 interface Variants<T> {
@@ -226,6 +228,7 @@ export interface FibrixaTemplateData {
         Industries?: Variants<IndustriesData>;
         Testimonials?: Variants<TestimonialsData>;
         Contact?: Variants<ContactData>;
+        EnquiryForm?: Variants<EnquiryFormData>;
       };
       templateComponents: {
         [template: string]: {

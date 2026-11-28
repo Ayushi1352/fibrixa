@@ -25,7 +25,11 @@ export default function Home() {
       <ProductsSection data={sectionData.Products?.variants?.PackagingProducts1} />
       <IndustriesSection data={sectionData.Industries?.variants?.PackagingIndustries1} />
       <TestimonialsSection data={sectionData.Testimonials?.variants?.PackagingTestimonials1} />
-      <ContactSection data={sectionData.Contact?.variants?.PackagingContact1} company={commonData.company} />
+      <ContactSection
+        data={sectionData.Contact?.variants?.PackagingContact1}
+        form={sectionData.EnquiryForm?.variants?.PackagingEnquiryForm1}
+        company={commonData.company}
+      />
     </main>
   );
 }

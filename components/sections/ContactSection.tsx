@@ -1,5 +1,5 @@
 import Image from "next/image";
-import type { CompanyData, ContactData } from "@/types/templates.types";
+import type { CompanyData, ContactData, EnquiryFormData } from "@/types/templates.types";
 import { Eyebrow, labelSize } from "@/components/ui/SectionHeading";
 import { scrollMargin, sectionGapBottom, sectionSpaceTop, sidePadding } from "@/components/ui/sectionSpace";
 import { Icon } from "@/components/ui/Icon";
@@ -11,7 +11,13 @@ import { EnquiryForm } from "@/components/sections/EnquiryForm";
  * form in a card with a thin maroon border. Phones and tablets: the form under the details. The footer follows after
  * the whole gap between sections.
  */
-export const ContactSection = ({ data, company }: { data?: ContactData; company: CompanyData }) => {
+type Props = {
+  data?: ContactData;
+  form?: EnquiryFormData;
+  company: CompanyData;
+};
+
+export const ContactSection = ({ data, form, company }: Props) => {
   if (!data) return null;
 
   return (
@@ -69,16 +75,18 @@ export const ContactSection = ({ data, company }: { data?: ContactData; company:
           </div>
         </div>
 
-        <div
-          data-reveal
-          className="w-full rounded-2xl border-2 border-[var(--color-border-form)] bg-[var(--color-white)] p-5 sm:p-8 lg:ml-[0.25rem] lg:mt-[4.94rem] lg:w-[57.69rem] lg:shrink-0 lg:rounded-[1.125rem] lg:border-[0.125rem] lg:pb-[2.88rem] lg:pl-[2.75rem] lg:pr-[2.75rem] lg:pt-[2.3rem]"
-        >
-          <h3 className="font-title text-[2rem] font-black leading-none tracking-[-0.01em] text-[var(--color-maroon-deep)] sm:text-[2.4rem] lg:text-[3.82rem]">
-            {data.form.titleTop} <span className="text-[var(--color-tan-title)]">{data.form.titleAccent}</span>
-          </h3>
-          <span aria-hidden="true" className="mt-3 block h-1 w-20 bg-[var(--color-maroon)] lg:mt-[1.53rem] lg:h-[0.375rem] lg:w-[7.875rem]" />
-          <EnquiryForm data={data.form} />
-        </div>
+        {form && (
+          <div
+            data-reveal
+            className="w-full rounded-2xl border-2 border-[var(--color-border-form)] bg-[var(--color-white)] p-5 sm:p-8 lg:ml-[0.25rem] lg:mt-[4.94rem] lg:w-[57.69rem] lg:shrink-0 lg:rounded-[1.125rem] lg:border-[0.125rem] lg:pb-[2.88rem] lg:pl-[2.75rem] lg:pr-[2.75rem] lg:pt-[2.3rem]"
+          >
+            <h3 className="font-title text-[2rem] font-black leading-none tracking-[-0.01em] text-[var(--color-maroon-deep)] sm:text-[2.4rem] lg:text-[3.82rem]">
+              {data.formTitleTop} <span className="text-[var(--color-tan-title)]">{data.formTitleAccent}</span>
+            </h3>
+            <span aria-hidden="true" className="mt-3 block h-1 w-20 bg-[var(--color-maroon)] lg:mt-[1.53rem] lg:h-[0.375rem] lg:w-[7.875rem]" />
+            <EnquiryForm data={form} />
+          </div>
+        )}
       </div>
     </section>
   );
