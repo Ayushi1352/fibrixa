@@ -20,7 +20,9 @@ const linkClass = (current: boolean) =>
  * gets compact with a shadow. Phones and tablets get a menu button that opens the links in a card.
  */
 export const Header = ({ data, company }: { data?: HeaderData; company: CompanyData }) => {
-  const active = useActiveSection(data?.navLinks.map((link) => link.url) ?? []);
+  // The "Contact Us" button's section is watched too: once the page is there, no menu link is shown as the current
+  // one (otherwise the last link before it, "Testimonials", would stay underlined)
+  const active = useActiveSection(data ? [...data.navLinks.map((link) => link.url), data.buttonUrl] : []);
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 

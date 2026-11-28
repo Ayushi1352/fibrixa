@@ -160,6 +160,13 @@ export interface TestimonialsData extends SplitTitle {
   description: string;
   /** "{stars} out of 5 stars" */
   ratingLabel: string;
+  /** screen-reader name of the sliding cards */
+  carouselLabel: string;
+  /** arrow buttons */
+  previousLabel: string;
+  nextLabel: string;
+  /** read out after an arrow press: "Testimonial {current} of {total}" */
+  slideStatus: string;
   items: TestimonialItem[];
 }
 

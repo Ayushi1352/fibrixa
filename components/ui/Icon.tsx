@@ -5,6 +5,7 @@ import { RiDoubleQuotesL } from "react-icons/ri";
 import {
   TbArrowRight,
   TbCheck,
+  TbChevronLeft,
   TbChevronRight,
   TbGift,
   TbLeaf,
@@ -29,6 +30,7 @@ const icons: Record<string, IconType> = {
   RiDoubleQuotesL,
   TbArrowRight,
   TbCheck,
+  TbChevronLeft,
   TbChevronRight,
   TbGift,
   TbLeaf,

@@ -320,6 +320,10 @@
               "titleAccent": "Clients Say",
               "description": "Trusted by businesses across industries for our quality, reliability and service.",
               "ratingLabel": "{stars} out of 5 stars",
+              "carouselLabel": "Client testimonials",
+              "previousLabel": "Previous testimonial",
+              "nextLabel": "Next testimonial",
+              "slideStatus": "Testimonial {current} of {total}",
               "items": [
                 {
                   "id": "aghnia-niaa",

@@ -4,10 +4,12 @@ import { Eyebrow, introSize, labelSize, TitleWords, titleSize } from "@/componen
 import { scrollMargin, sectionSpace, sidePadding } from "@/components/ui/sectionSpace";
 import { Icon } from "@/components/ui/Icon";
 import { fill } from "@/components/ui/text";
+import { TestimonialsCarousel } from "@/components/sections/TestimonialsCarousel";
 
 /**
- * Centred heading ("Clients Say" in maroon), then three white cards with a rounded border: the tan quote mark, the
- * quote, five stars, a thin line, and the client's round photo with their name and role.
+ * Centred heading ("Clients Say" in maroon), then the white cards with a rounded border (the tan quote mark, the
+ * quote, five stars, a thin line, and the client's round photo with their name and role) in a row that slides with
+ * the round arrow buttons under it.
  */
 export const TestimonialsSection = ({ data }: { data?: TestimonialsData }) => {
   if (!data) return null;
@@ -30,13 +32,14 @@ export const TestimonialsSection = ({ data }: { data?: TestimonialsData }) => {
         </p>
       </div>
 
-      <ul className={`mx-auto mt-10 grid max-w-[40rem] gap-5 ${sidePadding} sm:max-w-none md:grid-cols-2 lg:mt-[4.15rem] lg:grid-cols-3 lg:gap-[1.31rem] lg:pl-[5.19rem] lg:pr-[5.06rem]`}>
-        {data.items.map((item, index) => (
-          <li
+      {/* phones see one card at a time, tablets two, desktops three; the arrows under the cards slide to the next one */}
+      <div data-reveal className={`mx-auto mt-10 max-w-[40rem] ${sidePadding} sm:max-w-none lg:mt-[4.15rem] lg:pl-[5.19rem] lg:pr-[5.06rem]`}>
+        <TestimonialsCarousel
+          labels={{ carouselLabel: data.carouselLabel, previousLabel: data.previousLabel, nextLabel: data.nextLabel, slideStatus: data.slideStatus }}
+          cards={data.items.map((item) => (
+          <div
             key={item.id}
-            data-reveal
-            data-reveal-delay={index * 90}
-            className="rounded-[1.25rem] border-2 border-[var(--color-border)] bg-[var(--color-white)] px-6 pb-6 pt-5 transition-[box-shadow,transform] duration-300 hover:-translate-y-1 hover:shadow-[0_1.4rem_2.6rem_-1.6rem_var(--color-shadow-strong)] lg:rounded-[1.5rem] lg:border-[0.125rem] lg:pb-[1.31rem] lg:pl-[3.5rem] lg:pr-[2rem] lg:pt-[1.1rem]"
+            className="w-full rounded-[1.25rem] border-2 border-[var(--color-border)] bg-[var(--color-white)] px-6 pb-6 pt-5 transition-[box-shadow,transform] duration-300 hover:-translate-y-1 hover:shadow-[0_1.4rem_2.6rem_-1.6rem_var(--color-shadow-strong)] lg:rounded-[1.5rem] lg:border-[0.125rem] lg:pb-[1.31rem] lg:pl-[3.5rem] lg:pr-[2rem] lg:pt-[1.1rem]"
           >
             <figure className="flex h-full flex-col">
               <Icon name="RiDoubleQuotesL" className="-ml-2 size-12 text-[var(--color-tan-quote)] lg:-ml-[0.6rem] lg:-mt-[0.1rem] lg:size-[4.9rem]" />
@@ -60,9 +63,10 @@ export const TestimonialsSection = ({ data }: { data?: TestimonialsData }) => {
                 </span>
               </figcaption>
             </figure>
-          </li>
-        ))}
-      </ul>
+          </div>
+          ))}
+        />
+      </div>
     </section>
   );
 };
